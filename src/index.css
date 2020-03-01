@@ -49,10 +49,7 @@ body {
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
   transition: transform 0.4s;
   margin: 7px 0px;
-}
-
-.card-body a {
-  color: #333;
+  border: none;
 }
 
 .card-body a:hover {
@@ -65,6 +62,7 @@ body {
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
   transition: transform 0.4s;
   margin: 7px 0px;
+  border: none;
 }
 
 .gallery .card-body {
@@ -104,6 +102,7 @@ body {
 
 .fa-times, .fa-chevron-left, .fa-chevron-right {
   text-shadow: 0px 1px 3px #000;
+  color: #f9f9f9;
 }
 
 .modal-content span:hover {
@@ -176,4 +175,19 @@ hr {
   background: #F6F7F9;
   color: #748194;
   font-size: 14px;
+}
+
+/* Media queries */
+
+@media (max-width: 600px) {
+  .modal-image {
+    background-size: cover;
+    margin: 0;
+    width: auto;
+    max-height: 300px;
+}
+
+.carousel-inner {
+  margin-top: 20px;
+}
 }
