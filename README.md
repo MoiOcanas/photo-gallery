@@ -2,7 +2,7 @@
 Photo gallery using Unsplash API. Made with react, boostrap, react-router and much love.
 
 ![GitHub Logo](/public/gallery-image.png)
-Format: ![Alt Text](url)
+![Alt Text](url)
 
 ## Get started
 
