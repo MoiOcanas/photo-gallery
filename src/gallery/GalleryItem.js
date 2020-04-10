@@ -20,7 +20,7 @@ class GalleryItem extends Component {
                 <span data-toggle="modal" data-target={"#" + photo.id} >
                     <div className="card">
                         <div className="card-body text-center">
-                            <img src={photo.urls.raw + "w=1500&h=400"} className="img-fluid img-gallery" alt="Responsive" />
+                            <img src={photo.urls.full + "w=1500&h=400"} className="img-fluid img-gallery" alt="Responsive" />
                         </div>
                     </div>
                 </span>
@@ -31,7 +31,7 @@ class GalleryItem extends Component {
                             <div className="row">
                                 <div className="col-sm-12 col-md-6">
                                     <div className="modal-body">
-                                        <img src={photo.urls.raw + "w=1500&h=400"} className="img-fluid modal-image" alt="Responsive" />
+                                        <img src={photo.urls.full + "w=1500&h=400"} className="img-fluid modal-image" alt="Responsive" />
                                     </div>
                                 </div>
                                 <div className="col-sm-12 col-md-6">

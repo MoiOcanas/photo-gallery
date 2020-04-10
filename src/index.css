@@ -54,7 +54,6 @@ body {
 
 .card-body a:hover {
   color: #333;
-
 }
 
 .gallery .card {
@@ -67,7 +66,10 @@ body {
 
 .gallery .card-body {
   border-radius: 0 !important;
-  padding: 1rem;
+  padding: 0.5 
+  
+  \1`   rem 
+  |6754W  a;
 }
 
 .gallery .card img { 
