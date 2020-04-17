@@ -14,7 +14,6 @@ class Gallery extends Component {
 
         axios.get(`https://api.unsplash.com/photos/?client_id=${API_KEY}`)
             .then(res => {
-                console.log(res.data)
                 this.setState({
                     galleryPhotos: res.data
                 });

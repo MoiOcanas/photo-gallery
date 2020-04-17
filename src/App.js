@@ -18,6 +18,8 @@ class App extends Component {
           <Navbar />
           <div className="container main-container">
           <GalleryNavbar />
+          <hr />
+          <br />
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/collections" component={Collections} />

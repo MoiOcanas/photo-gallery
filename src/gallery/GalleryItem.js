@@ -16,7 +16,7 @@ class GalleryItem extends Component {
     render() {
         const { photo } = this.props;
         return (
-            <div className="col-sm-12 col-md-3 gallery" >
+            <div className="col-sm-12 col-md-3" >
                 <span data-toggle="modal" data-target={"#" + photo.id} >
                     <div className="card">
                         <div className="card-body text-center">
@@ -36,7 +36,7 @@ class GalleryItem extends Component {
                                 </div>
                                 <div className="col-sm-12 col-md-6">
                                     <span data-dismiss="modal">
-                                        <i className="fa fa-times fa-2x" aria-hidden="true"></i>
+                                        <label className="close"></label>
                                     </span>
                                     <div className="modal-footer-info text-left">
                                         <p><i  onClick={() => { this.likePhoto(photo.id) }} className="fa fa-heart-o" aria-hidden="true"></i> {photo.likes}</p>
@@ -51,8 +51,8 @@ class GalleryItem extends Component {
                                                     <i className="fa fa-ellipsis-h" aria-hidden="true"></i>
                                                 </button>
                                                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                    <a className="dropdown-item" target="_blank" href={photo.links.download}>download</a>
-                                                    <a className="dropdown-item" target="_blank" href={photo.user.portfolio_url}>user portfolio</a>
+                                                    <a className="dropdown-item" href={photo.links.download}>download</a>
+                                                    <a className="dropdown-item" href={photo.user.portfolio_url}>user portfolio</a>
                                                 </div>
                                             </div>
     

@@ -17,10 +17,10 @@ const CollectionPreviewImages = ({ collection }) => {
 
                 </div>
                 <a className="carousel-control-prev" href={`#${collection.id}`} role="button" data-slide="prev">
-                    <i className="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
+                    <div id="chevron-arrow-left"></div>
                 </a>
                 <a className="carousel-control-next" href={`#${collection.id}`} role="button" data-slide="next">
-                    <i className="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+                    <div id="chevron-arrow-right"></div>
                 </a>
             </div>
         </div>

@@ -11,19 +11,22 @@ const CollectionItem = ({ collection }) => {
                 <div className="card-body">
                     <div className="row">
                         <div className="col-sm-12 col-md-9">
-                            <h5>{collection.title}</h5>
+                            <h5><b>{collection.title}</b></h5>
                             <div>{collection.description ? collection.description : "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua."}</div>
-                            <br />
-                            <Link to={`/collection/${collection.id}`}><h6>See collecion photos</h6></Link>
-                            <br />
+
+                            <div style={{ margin: '10px 0px 10px 0px' }}>
+                                <Link to={`/collection/${collection.id}`}>See collecion photos</Link>
+                            </div>
                             <hr />
-                            {
-                                collection.tags && collection.tags.map((tag, i) => {
-                                    return (
-                                        <span className="badge badge-light tag" key={i}>{tag.title}</span>
-                                    );
-                                })
-                            }
+                            <div>
+                                {
+                                    collection.tags && collection.tags.map((tag, i) => {
+                                        return (
+                                            <span className="badge badge-light tag" key={i}>{tag.title}</span>
+                                        );
+                                    })
+                                }
+                            </div>
                         </div>
                         <div className="col-sm-12 col-md-3">
                             <CollectionPreviewImages collection={collection} />
@@ -31,6 +34,7 @@ const CollectionItem = ({ collection }) => {
                     </div>
                 </div>
             </div>
+            <br />
         </div>
     );
 }
