@@ -21,10 +21,10 @@ class App extends Component {
           <hr />
           <br />
             <Switch>
-              <Route exact path="/home" component={Home} />
-              <Route path="/collections" component={Collections} />
-              <Route path="/collection/:id" component={CollectionDetails} />
-              <Route path="/search" component={Search} />
+              <Route exact path="/photo-gallery/home" component={Home} />
+              <Route path="/photo-gallery/collections" component={Collections} />
+              <Route path="/photo-gallery/collection/:id" component={CollectionDetails} />
+              <Route path="/photo-gallery/search" component={Search} />
             </Switch>
           </div>
         </div>
