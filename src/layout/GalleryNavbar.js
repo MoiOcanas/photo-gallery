@@ -6,13 +6,13 @@ const GalleryNavbar = () => {
         <div>
             <ul className="nav justify-content-center">
                 <li className="nav-item">
-                    <Link className="nav-link active" to="/photo-gallery/home">Home</Link>
+                    <Link className="nav-link active" to="/home">Home</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="/photo-gallery/search">Search</Link>
+                    <Link className="nav-link" to="/search">Search</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="/photo-gallery/collections">Collections</Link>
+                    <Link className="nav-link" to="/collections">Collections</Link>
                 </li>
             </ul>
         </div>
