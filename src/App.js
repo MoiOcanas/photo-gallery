@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 //Components
 import Navbar from './layout/Navbar';
@@ -9,29 +9,24 @@ import GalleryNavbar from './layout/GalleryNavbar';
 import CollectionDetails from './collections/CollectionDetails';
 import Search from './search/Search';
 
-class App extends Component {
+const App = () => (
+  <Router>
+    <div className="App">
+      <Navbar />
+      <div className="container main-container">
+        <GalleryNavbar />
+        <hr />
+        <br />
+        <Switch>
+          <Route exact path="/photo-gallery/" component={Home} />
+          <Route path="/collections" component={Collections} />
+          <Route path="/collection/:id" component={CollectionDetails} />
+          <Route path="/search" component={Search} />
+        </Switch>
+      </div>
+    </div>
 
-  render() {
-    return (
-      <BrowserRouter>
-        <div className="App">
-          <Navbar />
-          <div className="container main-container">
-          <GalleryNavbar />
-          <hr />
-          <br />
-            <Switch>
-              <Route exact path="/home" component={Home} />
-              <Route path="/collections" component={Collections} />
-              <Route path="/collection/:id" component={CollectionDetails} />
-              <Route path="/search" component={Search} />
-            </Switch>
-          </div>
-        </div>
-
-      </BrowserRouter>
-    );
-  }
-}
+  </Router>
+);
 
 export default App;

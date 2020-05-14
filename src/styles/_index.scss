@@ -1,200 +1,204 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 
 /* Variables */
-@import '_variables.scss';
+@import "_variables.scss";
 
 /* Navs */
-@import '_navs.scss';
+@import "_navs.scss";
 
 body {
-  margin: 0;
-  font-family: "Lato", "Helvetica", Helvetica, sans-serif;
+	margin: 0;
+	font-family: "Lato", "Helvetica", Helvetica, sans-serif;
 
-  .main-container {
-    margin-top: 120px;
-  }
+	.main-container {
+		margin-top: 120px;
+	}
 
-  .search-input {
-    font-weight: bold;
-    width: 100%;
-    height: 40px;
-    padding: 6px 15px;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-    margin-bottom: 1em;
-    background: #F6F7F9;
-    color: #748194;
-    font-size: 14px;
-  }
+	.search-input {
+		font-weight: bold;
+		width: 100%;
+		height: 40px;
+		padding: 6px 15px;
+		border-radius: 5px;
+		outline: none;
+		border: none;
+		margin-bottom: 1em;
+		background: #f6f7f9;
+		color: #748194;
+		font-size: 14px;
+	}
 }
 
 .close {
-  width: 32px;
-  height: 32px;
-  opacity: 0.8;
+	width: 32px;
+	height: 32px;
+	opacity: 0.8;
 
-  &:hover {
-    opacity: 1;
-    cursor: pointer;
-  }
-  &:before, &:after {
-    position: absolute;
-    left: 15px;
-    content: ' ';
-    height: 26px;
-    width: 2px;
-    background-color: #333;
-  }
-  &:before {
-    transform: rotate(45deg);
-  }
-  &:after {
-    transform: rotate(-45deg);
-  }
+	&:hover {
+		opacity: 1;
+		cursor: pointer;
+	}
+	&:before,
+	&:after {
+		position: absolute;
+		left: 15px;
+		content: " ";
+		height: 26px;
+		width: 2px;
+		background-color: #333;
+	}
+	&:before {
+		transform: rotate(45deg);
+	}
+	&:after {
+		transform: rotate(-45deg);
+	}
 }
 
 .card {
-  box-shadow: 0px 0px 3px 0px rgba(170,170,170,1);
-  border-radius: 0.5em;
-  margin: 7px 0px;
-  border: none;
+	box-shadow: 0px 0px 3px 0px rgba(170, 170, 170, 1);
+	border-radius: 0.5em;
+	margin: 7px 0px;
+	border: none;
 
-  &:hover {
-    box-shadow: 0px 0px 5px 0px rgba(170,170,170,1);
-    cursor: pointer;
-  }
+	&:hover {
+		box-shadow: 0px 0px 5px 0px rgba(170, 170, 170, 1);
+		cursor: pointer;
+	}
 
-  img { 
-    max-height: 150px;
-    margin: 2px;
-    background-size: cover;
-  }
+	img {
+		max-height: 150px;
+		margin: 2px;
+		background-size: cover;
+	}
 
-  a {
-    color: #333333;
-    margin: 0px 5px;
-    transition: background-color 0.3s;
-    border-radius: 0.5rem;
-    margin-bottom: 1em;
-  }
+	a {
+		color: #333333;
+		margin: 0px 5px;
+		transition: background-color 0.3s;
+		border-radius: 0.5rem;
+		margin-bottom: 1em;
+	}
 }
 
 .modal-dialog {
-  max-width: 700px;
+	max-width: 700px;
 
-  .modal-content {
-    border: $shadow-color;
-    border-radius: 0 !important;
+	.modal-content {
+		border: $shadow-color;
+		border-radius: 0 !important;
 
-    span {
-        position: absolute;
-        top: 10px;
-        right: 23px;
-        z-index: 2;
+		span {
+			position: absolute;
+			top: 10px;
+			right: 23px;
+			z-index: 2;
 
-        &hover {
-          cursor: pointer;
-        }
-    }
+			&hover {
+				cursor: pointer;
+			}
+		}
 
-    .modal-body {
-      padding: 0;
+		.modal-body {
+			padding: 0;
 
-      .modal-image {
-        background-size: cover;
-        margin: 0;
-        width: 100%;
-      }
-    }
-  }
+			.modal-image {
+				background-size: cover;
+				margin: 0;
+				width: 100%;
+			}
+		}
+	}
 }
 
-.fa-times, .fa-chevron-left, .fa-chevron-right {
-  text-shadow: 0px 1px 3px #000;
-  color: $light-color;
+.fa-times,
+.fa-chevron-left,
+.fa-chevron-right {
+	text-shadow: 0px 1px 3px #000;
+	color: $light-color;
 }
 
 .modal-footer-info {
-    padding: .75rem;
-    border-top: 1px solid $light-color;
-    border-bottom-right-radius: calc(.3rem - 1px);
-    border-bottom-left-radius: calc(.3rem - 1px);
+	padding: 0.75rem;
+	border-top: 1px solid $light-color;
+	border-bottom-right-radius: calc(0.3rem - 1px);
+	border-bottom-left-radius: calc(0.3rem - 1px);
 
-    .modal-info {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
+	.modal-info {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 
-    .modal-footer-container {
-      display: flex;
-      flex-direction: row;
-      padding-top: 10px;
-      justify-content: space-between;
+	.modal-footer-container {
+		display: flex;
+		flex-direction: row;
+		padding-top: 10px;
+		justify-content: space-between;
 
-      p {
-        margin: 0px 5px;
-      }
+		p {
+			margin: 0px 5px;
+		}
 
-      img {
-        width: 23px;
-        margin-left: 5px;
-      }
-    }
+		img {
+			width: 23px;
+			margin-left: 5px;
+		}
+	}
 }
 
 .btn-link {
-  color: $dark-color !important;
+	color: $dark-color !important;
 
-  .dropdown-menu {
-    box-shadow: $shadow-color;
-    border: none;
-  }
+	.dropdown-menu {
+		box-shadow: $shadow-color;
+		border: none;
+	}
 }
 
 hr {
-  margin: 0 !important;
+	margin: 0 !important;
 }
 
 .tag {
-  margin: 0px 5px;
+	margin: 0px 5px;
 }
 
 .carousel {
-  img {
-    max-height: 150px;
-  }
-  
-  #chevron-arrow-left {
-    display: inline-block;
-    border-right: 4px solid $dark-color;
-    border-bottom: 4px solid $dark-color;
-    width: 10px; height: 10px;
-    transform: rotate(-225deg);
-  }
-  
-  #chevron-arrow-right {
-    display: inline-block;
-    border-right: 4px solid $dark-color;
-    border-bottom: 4px solid $dark-color;
-    width: 10px; height: 10px;
-    transform: rotate(-45deg);
-  }
+	img {
+		max-height: 150px;
+	}
 
+	#chevron-arrow-left {
+		display: inline-block;
+		border-right: 4px solid $dark-color;
+		border-bottom: 4px solid $dark-color;
+		width: 10px;
+		height: 10px;
+		transform: rotate(-225deg);
+	}
+
+	#chevron-arrow-right {
+		display: inline-block;
+		border-right: 4px solid $dark-color;
+		border-bottom: 4px solid $dark-color;
+		width: 10px;
+		height: 10px;
+		transform: rotate(-45deg);
+	}
 }
 
 /* Media queries */
 
 @media (max-width: 600px) {
-  .modal-image {
-      background-size: cover;
-      margin: 0;
-      width: auto;
-      max-height: 300px;
-  }
+	.modal-image {
+		background-size: cover;
+		margin: 0;
+		width: auto;
+		max-height: 300px;
+	}
 
-  .carousel-inner {
-    margin-top: 20px;
-  }
+	.carousel-inner {
+		margin-top: 20px;
+	}
 }

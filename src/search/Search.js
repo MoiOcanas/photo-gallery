@@ -25,7 +25,6 @@ class Search extends Component {
                 this.setState({
                     result: res.data
                 });
-                console.log(this.state.result);
             })
     }
 
